@@ -167,7 +167,7 @@ var rooms = {
       "south": "east1"
     }
   },
-  "norteast2": {
+  "northeast2": {
     "description": "<h3>Forest</h3> You are in a forest,\
      you see trees all around..",
     "directions": {
