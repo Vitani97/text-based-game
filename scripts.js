@@ -36,6 +36,8 @@ function showInventory() {
   $('#game-text').append("</ul></p>");
 }
 
+//this is the "look" command, i am attemting to make (insert).
+//in which where the player can use the check a given room has any items in that location.
 function useLook() {
   if(rooms[currentRoom].items !== undefined) {
     item = rooms[currentRoom].items
@@ -45,6 +47,8 @@ function useLook() {
   }
 }
 
+//this is the "take" command, sometimes known as a "pick up" command, elsewhere.
+//this command should able the player to take items into their inventory, if a item is in the current room. 
 function TakeItem() {
   inventory[inventory.length] = item+(" ")[1];
   $('#game-text').append("<p>" + "You have taken [items]" + "</p>");
