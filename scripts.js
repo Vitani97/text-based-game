@@ -50,7 +50,7 @@ function useLook() {
 //this is the "take" command, sometimes known as a "pick up" command, elsewhere.
 //this command should able the player to take items into their inventory, if a item is in the current room. 
 function TakeItem() {
-  inventory[inventory.length] = item+(" ")[1];
+  inventory[inventory.length] = items+(" ")[1];
   $('#game-text').append("<p>" + "You have taken [items]" + "</p>");
 }
 
@@ -70,9 +70,9 @@ function playerInput(input) {
     case "look":
       useLook();
       break;
-    case "take":
+     case "take":
       var items = input.split(" ")[1];
-      take(items);
+      TakeItem(items);
       break;
     default:
     $('#game-text').append("<p>Invalid command</p>");
