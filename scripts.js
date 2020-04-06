@@ -1,6 +1,6 @@
 var currentRoom = "start";
 var commands = ["go", "inventory", "take"];
-var inventory = ["sword"];
+var inventory = [];
 
 function changeRoom(dir) {
   if(rooms[currentRoom].directions[dir] !== undefined) {
